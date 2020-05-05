@@ -63,7 +63,7 @@
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <excludes>
-                    <exclude>application-outside.properties</exclude>
+                    <exclude>application-outsidejar.properties</exclude>
                 </excludes>
             </resource>
         </resources>
