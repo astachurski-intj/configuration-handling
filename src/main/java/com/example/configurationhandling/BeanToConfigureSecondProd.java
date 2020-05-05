@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BeanToConfigureSecondProd implements BeanTonConfigureSecondIntf {
@@ -26,6 +27,7 @@ public class BeanToConfigureSecondProd implements BeanTonConfigureSecondIntf {
 
     @Override
     public String toString() {
+        ArrayList bub = new ArrayList();
         return getName() + "/" + number();
     }
 }

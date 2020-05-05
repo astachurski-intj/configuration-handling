@@ -19,4 +19,11 @@ public class BeanConfiguration {
     public BeanTonConfigureSecondIntf beanToConfigureSecondProd() {
         return new BeanToConfigureSecondProd();
     }
+
+    @Bean
+    @Profile("outsidejar")
+    public BeanTonConfigureSecondIntf beanToConfigureSeconOther() {
+        //we can return ANY implementation here
+        return new BeanToConfigureSecondProd();
+    }
 }

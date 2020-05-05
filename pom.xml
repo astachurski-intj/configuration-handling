@@ -58,6 +58,15 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>application-outside.properties</exclude>
+                </excludes>
+            </resource>
+        </resources>
     </build>
 
 
